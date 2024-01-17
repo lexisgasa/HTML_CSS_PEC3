@@ -45,6 +45,10 @@ header ul {
     justify-content: space-evenly;
 }
 
+header a:hover {
+    color: var(--contraste);
+}
+
 header li:first-of-type {
     padding-right: 1rem;
     border-right: 1px solid var(--principal);
@@ -90,6 +94,10 @@ footer ul:last-of-type {
 footer ul:last-of-type a {
     color: var(--blanco);
     text-decoration: none;
+}
+
+footer ul a:hover{
+    color: var(--contrasteClaro)
 }
 
 .active {
@@ -151,6 +159,10 @@ footer ul:last-of-type a {
     color: var(--contraste);
     border-bottom: 1px dotted var(--contraste);
     padding-bottom: 1px;
+}
+#index section:nth-child(2) fieldset p:nth-child(3) a:hover {
+    color: var(--principal);
+    border-bottom: 1px dotted var(--principal);
 }
 
 #index section:nth-child(2) fieldset p:nth-child(4) {
@@ -261,6 +273,11 @@ footer ul:last-of-type a {
     text-decoration: none;
     color: var(--contraste);
     border-bottom: 1px dotted var(--contraste);
+}
+
+#entrada main article p a:hover {
+    color: var(--principal);
+    border-bottom: 1px dotted var(--principal);
 }
 
 abbr {
@@ -475,6 +492,11 @@ abbr {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px dotted var(--contraste);
+}
+
+#blog main article a:nth-child(3):hover{
+    color: var(--principal);
+    border-bottom: 1px dotted var(--principal);
 }
 
 #blog main article a:nth-child(3):hover {
@@ -711,6 +733,19 @@ abbr {
         grid-area: form;
     }
 
+    #index main div {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    
+    #index main article {
+        padding: 0 20vw;
+
+    }
 
 
     /* * entrada * */
